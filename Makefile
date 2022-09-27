@@ -10,6 +10,6 @@ format:
 
 
 lint:
-	pylint --disable=R,C querydb.py
+	# pylint --disable=R,C querydb.py
 
 all: install lint test
