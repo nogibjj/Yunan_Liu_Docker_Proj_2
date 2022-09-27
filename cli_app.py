@@ -11,7 +11,7 @@ def cli():
 
 @cli.command()
 @click.option('--query', help = "Query the first two lines of file in databricks")
-def queryFunc():
+def queryfunc(query):
     """Query function!"""
 
     result = querydb()
@@ -19,11 +19,11 @@ def queryFunc():
 
 @cli.command()
 @click.option('--sort', help = "Sort data in the databricks by year descending")
-def queryFunc():
+def sortbyyear(sort):
     """Sort data!"""
 
     result = sortbyyearDESC()
-    click.echo(result)
+    # click.echo(result)
 
 if __name__ == "__main__":
     cli()

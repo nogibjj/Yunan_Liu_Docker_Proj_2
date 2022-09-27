@@ -33,4 +33,3 @@ def sortbyyearDESC(query="SELECT * FROM default.co2_emission_by_countries_csv OR
             print("\n")
 
     return result
-

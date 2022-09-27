@@ -4,7 +4,7 @@ FROM python:3.9-bullseye
 WORKDIR /app
 
 # Copy source code to working directory
-COPY . app.py /app/
+COPY cli_app.py fastApi_app.py querydb.py requirements.txt /app/
 
 # Install packages from requirements.txt
 # hadolint ignore=DL3013
