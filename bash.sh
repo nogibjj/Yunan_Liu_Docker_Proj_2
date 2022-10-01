@@ -1,5 +1,6 @@
 #! /usr/bin/env bash
  
+#print greeting message
 echo "What's your name?"
 read name
 if [ $name ]; then 
@@ -8,6 +9,7 @@ else
     echo "Please enter a valid name"
 fi
 
+#file sorting function
 echo "Enter the file name"
 read file
 if [ -e "$file" ]; then
