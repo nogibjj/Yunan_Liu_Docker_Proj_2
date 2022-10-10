@@ -21,3 +21,8 @@ if [ -e "$file" ]; then
 else
     echo "$file does not exist"
 fi
+
+#add to the end of file
+echo "Enter the content you want to add to the end of the sorted file"
+read content
+echo "$content" >> sorted_file.txt
